@@ -105,6 +105,7 @@ namespace AssetGenerator
     }
     internal enum PropertyName
     {
+        AlphaMode,
         NormalTexture,
         Normals,
         NormalTextureScale,
@@ -112,6 +113,8 @@ namespace AssetGenerator
         OcclusionTextureStrength,
         EmissiveTexture,
         EmissiveFactor,
+        VertexColor,
+        BaseColorTexture,
         BaseColorFactor,
         MetallicFactor,
     }
