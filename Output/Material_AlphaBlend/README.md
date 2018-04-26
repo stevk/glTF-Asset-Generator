@@ -4,7 +4,7 @@ The following table shows the properties that are set for every model.
 
 | Property | **Values** |
 | :---: | :---: |
-| Alpha Mode |  |
+| Alpha Mode | Blend |
 
 
 The following table shows the properties that are set for a given model.  

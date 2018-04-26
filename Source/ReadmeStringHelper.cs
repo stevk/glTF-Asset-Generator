@@ -87,10 +87,11 @@ namespace AssetGenerator
                         output = value.ToString("0.0"); // Displays two digits for floats
                     }
                     else if (valueType.BaseType.Equals(typeof(Enum)) ||
+                             valueType.BaseType.Equals(typeof(System.Enum)) ||
                              valueType.Equals(typeof(AssetGenerator.VertexColor)))
                     {
                         // Use the TestValue enum instead of the Runtime enum
-                        output = GenerateNonbinaryName(value.ToString());
+                        output = GenerateNameWithSpaces(value.ToString());
                     }
                     else
                     {
@@ -146,9 +147,7 @@ namespace AssetGenerator
                 {
                     break;
                 }
-                else
-
-                if (char.IsUpper(sourceName[i]) &&
+                else if (char.IsUpper(sourceName[i]) &&
                     sourceName[i - 1] != ' ' &&
                     !char.IsUpper(sourceName[i - 1]))
                 {
@@ -161,7 +160,16 @@ namespace AssetGenerator
 
                 if (!Equals(sourceName[i], '_'))
                 {
-                    name.Append(sourceName[i]);
+                    if (char.IsUpper(sourceName[i]) &&
+                        name.Length > 0 &&
+                        char.IsUpper(sourceName[i - 1]))
+                    {
+                        name.Append(char.ToLower(sourceName[i]));
+                    }
+                    else
+                    {
+                        name.Append(sourceName[i]);
+                    }
                 }
             }
             return name.ToString();
