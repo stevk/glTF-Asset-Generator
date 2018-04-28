@@ -78,7 +78,8 @@ namespace AssetGenerator
                 meshPrimitive.ColorType = Runtime.MeshPrimitive.ColorTypeEnum.VEC4;
                 meshPrimitive.Colors = vertexColors;
 
-                properties.Add(new Property(PropertyName.VertexColor, vertexColors));
+                var vertexColorsValue = new VertexColor(meshPrimitive.ColorComponentType, meshPrimitive.ColorType, meshPrimitive.Colors);
+                properties.Add(new Property(PropertyName.VertexColor, vertexColorsValue));
             }
 
 

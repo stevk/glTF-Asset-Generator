@@ -86,12 +86,14 @@ namespace AssetGenerator
                     {
                         output = value.ToString("0.0"); // Displays two digits for floats
                     }
-                    else if (valueType.BaseType.Equals(typeof(Enum)) ||
-                             valueType.BaseType.Equals(typeof(System.Enum)) ||
-                             valueType.Equals(typeof(AssetGenerator.VertexColor)))
+                    else if (valueType.BaseType.Equals(typeof(Enum)))
                     {
                         // Use the TestValue enum instead of the Runtime enum
                         output = GenerateNameWithSpaces(value.ToString());
+                    }
+                    else if (valueType.Equals(typeof(VertexColor)))
+                    {
+                        output = GenerateNameWithSpaces(String.Format("{0} {1}", value.Type.ToString(), value.ComponentType.ToString()));
                     }
                     else
                     {
