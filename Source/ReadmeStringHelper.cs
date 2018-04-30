@@ -88,12 +88,22 @@ namespace AssetGenerator
                     }
                     else if (valueType.BaseType.Equals(typeof(Enum)))
                     {
-                        // Use the TestValue enum instead of the Runtime enum
                         output = GenerateNameWithSpaces(value.ToString());
                     }
                     else if (valueType.Equals(typeof(VertexColor)))
                     {
-                        output = GenerateNameWithSpaces(String.Format("{0} {1}", value.Type.ToString(), value.ComponentType.ToString()));
+                        // ColorType then ColorComponentType
+                        // Come back later and change this to be VEC# 
+                        string colorType;
+                        if (value.Type == Runtime.MeshPrimitive.ColorTypeEnum.VEC4)
+                        {
+                            colorType = "Vector4";
+                        }
+                        else
+                        {
+                            colorType = "Vector3";
+                        }
+                        output = String.Format("{0} {1}", colorType, GenerateNameWithSpaces(value.ComponentType.ToString()));
                     }
                     else
                     {
