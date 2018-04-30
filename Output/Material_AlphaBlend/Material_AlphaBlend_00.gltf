@@ -76,7 +76,6 @@
   ],
   "materials": [
     {
-      "pbrMetallicRoughness": {},
       "alphaMode": "BLEND"
     }
   ],

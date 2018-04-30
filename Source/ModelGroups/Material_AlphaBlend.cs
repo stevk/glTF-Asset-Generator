@@ -52,6 +52,11 @@ namespace AssetGenerator
                 };
             }
 
+            void SetNoMetallicRoughness(List<Property> properties, Runtime.MeshPrimitive meshPrimitive)
+            {
+                meshPrimitive.Material.MetallicRoughnessMaterial = null;
+            }
+
             void SetBaseColorFactor(List<Property> properties, Runtime.PbrMetallicRoughness metallicRoughness)
             {
                 var baseColorFactorValue = new Vector4(1.0f, 1.0f, 1.0f, 0.7f);
@@ -87,6 +92,7 @@ namespace AssetGenerator
             {
                 CreateModel((properties, meshPrimitive, metallicRoughness) => {
                     SetVertexColor(properties, meshPrimitive);
+                    SetNoMetallicRoughness(properties, meshPrimitive);
                 }),
                 CreateModel((properties, meshPrimitive, metallicRoughness) => {
                     SetBaseColorTexture(properties, metallicRoughness);
