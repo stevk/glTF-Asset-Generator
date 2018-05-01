@@ -29,9 +29,10 @@ namespace AssetGenerator
             // Create a list containing each model group and their initial values
             List<ModelGroup> allModelGroups = new List<ModelGroup>()
             {
-                new Material(imageList),
-                new Material_AlphaBlend(imageList),
-                new Material_AlphaMask(imageList),
+                //new Material(imageList),
+                //new Material_AlphaBlend(imageList),
+                //new Material_AlphaMask(imageList),
+                new Material_DoubleSided(imageList),
             };
 
             var modelGroupIndex = 0;
