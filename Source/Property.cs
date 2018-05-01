@@ -2,7 +2,6 @@
 using System.Reflection;
 using System.Collections.Generic;
 using System.Numerics;
-using System.Linq;
 
 namespace AssetGenerator
 {
