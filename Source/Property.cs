@@ -2,6 +2,7 @@
 using System.Reflection;
 using System.Collections.Generic;
 using System.Numerics;
+using System.Linq;
 
 namespace AssetGenerator
 {
@@ -24,6 +25,26 @@ namespace AssetGenerator
             ReadmeColumnName = ReadmeStringHelper.GenerateNameWithSpaces(enumName.ToString());
             ReadmeValue = ReadmeStringHelper.ConvertValueToString(displayValue);
             PropertyGroup = group;
+        }
+    }
+
+    internal class PropertyComparer : IEqualityComparer<Property>
+    {
+        public bool Equals(Property x, Property y)
+        {
+            if (x.Name == y.Name)
+            {
+                return x.ReadmeValue == y.ReadmeValue;
+            }
+            else
+            {
+                return false;
+            }
+        }
+
+        public int GetHashCode(Property obj)
+        {
+            return obj.Name.GetHashCode();
         }
     }
 
