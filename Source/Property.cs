@@ -106,6 +106,7 @@ namespace AssetGenerator
     internal enum PropertyName
     {
         AlphaMode,
+        AlphaCutoff,
         NormalTexture,
         Normals,
         NormalTextureScale,
