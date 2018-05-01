@@ -61,20 +61,17 @@
       "name": "Indices"
     }
   ],
-  "images": [
-    {
-      "uri": "Textures/BaseColor_Plane.png"
-    }
-  ],
   "materials": [
     {
       "pbrMetallicRoughness": {
-        "baseColorTexture": {
-          "index": 0
-        }
+        "baseColorFactor": [
+          1.0,
+          1.0,
+          1.0,
+          0.7
+        ]
       },
-      "alphaMode": "MASK",
-      "alphaCutoff": 0.7
+      "alphaMode": "BLEND"
     }
   ],
   "meshes": [
@@ -102,11 +99,6 @@
       "nodes": [
         0
       ]
-    }
-  ],
-  "textures": [
-    {
-      "source": 0
     }
   ]
 }

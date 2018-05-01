@@ -4,9 +4,9 @@ using System.Collections.Generic;
 
 namespace AssetGenerator
 {
-    class Material_AlphaMask : ModelGroup
+    internal class Material_AlphaMask : ModelGroup
     {
-        public override ModelGroupName Name => ModelGroupName.Material_AlphaBlend;
+        public override ModelGroupName Name => ModelGroupName.Material_AlphaMask;
 
         public Material_AlphaMask(List<string> imageList)
         {

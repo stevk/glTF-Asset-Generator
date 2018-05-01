@@ -73,8 +73,7 @@
           "index": 0
         }
       },
-      "alphaMode": "MASK",
-      "alphaCutoff": 0.4
+      "alphaMode": "BLEND"
     }
   ],
   "meshes": [

@@ -175,11 +175,11 @@
     ]
   },
   {
-    "folder": "Material_AlphaBlend",
+    "folder": "Material_AlphaMask",
     "models": [
       {
-        "fileName": "Material_AlphaBlend_00.gltf",
-        "sampleImageName": "Figures/SampleImages/Material_AlphaBlend_00.png",
+        "fileName": "Material_AlphaMask_00.gltf",
+        "sampleImageName": "Figures/SampleImages/Material_AlphaMask_00.png",
         "camera": {
           "translation": [
             0.0,
@@ -189,8 +189,8 @@
         }
       },
       {
-        "fileName": "Material_AlphaBlend_01.gltf",
-        "sampleImageName": "Figures/SampleImages/Material_AlphaBlend_01.png",
+        "fileName": "Material_AlphaMask_01.gltf",
+        "sampleImageName": "Figures/SampleImages/Material_AlphaMask_01.png",
         "camera": {
           "translation": [
             0.0,
@@ -200,8 +200,8 @@
         }
       },
       {
-        "fileName": "Material_AlphaBlend_02.gltf",
-        "sampleImageName": "Figures/SampleImages/Material_AlphaBlend_02.png",
+        "fileName": "Material_AlphaMask_02.gltf",
+        "sampleImageName": "Figures/SampleImages/Material_AlphaMask_02.png",
         "camera": {
           "translation": [
             0.0,
@@ -211,8 +211,8 @@
         }
       },
       {
-        "fileName": "Material_AlphaBlend_03.gltf",
-        "sampleImageName": "Figures/SampleImages/Material_AlphaBlend_03.png",
+        "fileName": "Material_AlphaMask_03.gltf",
+        "sampleImageName": "Figures/SampleImages/Material_AlphaMask_03.png",
         "camera": {
           "translation": [
             0.0,
@@ -222,8 +222,8 @@
         }
       },
       {
-        "fileName": "Material_AlphaBlend_04.gltf",
-        "sampleImageName": "Figures/SampleImages/Material_AlphaBlend_04.png",
+        "fileName": "Material_AlphaMask_04.gltf",
+        "sampleImageName": "Figures/SampleImages/Material_AlphaMask_04.png",
         "camera": {
           "translation": [
             0.0,
@@ -233,8 +233,8 @@
         }
       },
       {
-        "fileName": "Material_AlphaBlend_05.gltf",
-        "sampleImageName": "Figures/SampleImages/Material_AlphaBlend_05.png",
+        "fileName": "Material_AlphaMask_05.gltf",
+        "sampleImageName": "Figures/SampleImages/Material_AlphaMask_05.png",
         "camera": {
           "translation": [
             0.0,
@@ -244,8 +244,8 @@
         }
       },
       {
-        "fileName": "Material_AlphaBlend_06.gltf",
-        "sampleImageName": "Figures/SampleImages/Material_AlphaBlend_06.png",
+        "fileName": "Material_AlphaMask_06.gltf",
+        "sampleImageName": "Figures/SampleImages/Material_AlphaMask_06.png",
         "camera": {
           "translation": [
             0.0,
