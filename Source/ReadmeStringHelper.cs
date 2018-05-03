@@ -199,7 +199,10 @@ namespace AssetGenerator
                     }
                 }
             }
-            return name.ToString();
+
+            var output = name.ToString().Replace("Uv", "UV");
+
+            return output;
         }
 
         public static string GenerateNonbinaryName(string sourceName)
