@@ -56,9 +56,9 @@ namespace AssetGenerator
                     },
                     new[]
                     {
-                        new Quaternion(0, 0, -0.70711f, 0.70711f),
-                        new Quaternion(-0.5f, 0.5f, 0.5f, -0.5f),
-                        new Quaternion(0, 0, -0.70711f, 0.70711f),
+                        Quaternion.Identity,
+                        Quaternion.CreateFromYawPitchRoll(0, quarterTurn, 0),
+                        Quaternion.Identity,
                     });
                 // debug end
 
